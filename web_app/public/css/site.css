@@ -1,0 +1,92 @@
+body {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+h1,h2,h3,h4,h5,h6,div,p,span{
+    font-family: 微軟正黑體;
+}
+
+footer {
+    background-color: #333;
+}
+
+footer:before {
+    content: "";
+    display: block;
+    height: 4px;
+    background: #317EAC;
+    margin-bottom: 2px;
+}
+
+footer .ss-footer-textcolor >a {
+    color: #ACDDFA;
+    line-height: 1.5;
+}
+
+footer .ss-footer-textcolor > a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.ss-shadow-no-bottom {
+    margin-bottom: 0;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .175);
+}
+
+.ss-ver-divider {
+    width: 1px;
+    height: 20px;
+    margin: 9px 0;
+    background-color: #ddd;
+}
+
+@media (max-width: 768px) {
+    .ss-ver-divider {
+        width: 0;
+        height: 1px;
+        margin: 0 0;
+    }
+}
+
+.ss-big-title{
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.ss-margin-center:before,
+.ss-margin-center:after{
+    content: "";
+    display: block;
+    margin-bottom: 50px;
+}
+
+.ss-img-center-look{
+    margin: 15px auto;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.ss-img-center-look:hover{
+    opacity: 0.7;
+}
+
+.ss-btn-hover:hover{
+    border: 1.5px solid #dddddd;
+    font-weight: 700;
+}
+
+.ss-navbar{
+    min-height: 40px;
+}
+
+.ss-navbar a{
+    padding: 9px 15px !important ;
+    height: 39px;
+}
+
