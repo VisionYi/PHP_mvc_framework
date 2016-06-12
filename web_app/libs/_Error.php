@@ -4,7 +4,7 @@
  */
 class _Error extends Controller {
 
-	private $error_number;
+    private $error_number;
     private $_file;
 
     /**
@@ -13,15 +13,15 @@ class _Error extends Controller {
      * @param string $number 錯誤代碼
      */
     function __construct($file='',$number='') {
-		if (ERROR_View_url != '') {
+        if (ERROR_View != '') {
             $this->error_number = $number;
-			$this->_file = $file;
+            $this->_file = $file;
 
             $this->title = "Error";
-            $this->View(ERROR_View_url, ERROR_Layout_url);
+            $this->View(ERROR_View, ERROR_Layout);
             exit();
-		}
-	}
+        }
+    }
 
     /**
      * 此function是給Error.php使用的

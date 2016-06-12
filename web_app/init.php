@@ -2,9 +2,9 @@
 // initial 所有底層資料夾設定
 
 // 預設根目錄
-define('ROOT_url', 'web_app');
-define('ERROR_View_url', 'Error.php');
-define('ERROR_Layout_url', '_shared/Layout.php');
+define('ROOT_PATH', 'web_app');
+define('ERROR_View', 'Error.php');
+define('ERROR_Layout', '_shared/Layout.php');
 
 // Auto loading all library php file
 require_once 'libs/App.php';

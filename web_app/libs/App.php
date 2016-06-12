@@ -20,17 +20,17 @@ class App {
 		$url = $this->parseUrl();
 
 		if (isset($url[0])) {
-			if (file_exists(ROOT_url . '/controllers/' . $url[0] . '.php')) {
+			if (file_exists(ROOT_PATH . '/controllers/' . $url[0] . '.php')) {
 				$this->controller = $url[0];
 				unset($url[0]);
 			} else {
 				new _Error($url[0] ,1);
 			}
-		} else if (!file_exists(ROOT_url . '/controllers/' . $this->controller . '.php')) {
+		} else if (!file_exists(ROOT_PATH . '/controllers/' . $this->controller . '.php')) {
 			new _Error($this->controller ,1);
 		}
 
-		require_once ROOT_url . '/controllers/' . $this->controller . '.php';
+		require_once ROOT_PATH . '/controllers/' . $this->controller . '.php';
 		$this->controller = new $this->controller;
 
 

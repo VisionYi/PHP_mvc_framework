@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="author" content="">
         <meta name="description" content="">
-        <title><?php echo $this->title; ?> - </title>
+        <title><?php echo $title; ?> - </title>
 
         <link rel="stylesheet" type="text/css" href="/web_app/public/lib/bootstrap/dist/css/bootstrap.min.css"/>
         <link rel="stylesheet" type="text/css" href="/web_app/public/lib/font-awesome/css/font-awesome.css"/>
@@ -13,7 +13,6 @@
         <link rel="stylesheet" type="text/css" href="/web_app/public/css/site.css" />
         <?php $this->get_css() ?>
 
-        <script type="text/javascript" src="/web_app/public/lib/jquery/dist/jquery.min.js"></script>
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -32,13 +31,13 @@
                 </div>
                 <div class="collapse navbar-collapse " id="navbar-1">
                     <ul class="nav navbar-nav">
-                        <li class="<?php $this->sel_p('Index','active')?>">
+                        <li class="<?php echo ($title=='Index')? 'active':''; ?>">
                             <a href="/Home">Home</a>
                         </li>
-                        <li class="<?php $this->sel_p('About','active')?>">
+                        <li class="<?php echo ($title=='About')? 'active':''; ?>">
                             <a href="/Home/About">About</a>
                         </li>
-                        <li class="<?php $this->sel_p('Contact','active')?>">
+                        <li class="<?php echo ($title=='Contact')? 'active':''; ?>">
                             <a href="/Home/Contact">Contact</a>
                         </li>
                     </ul>
@@ -96,6 +95,7 @@
             </div>
         </footer>
 
+        <script type="text/javascript" src="/web_app/public/lib/jquery/dist/jquery.min.js"></script>
         <script type="text/javascript" src="/web_app/public/lib/angular/angular.min.js"></script>
         <script type="text/javascript" src="/web_app/public/lib/bootstrap/dist/js/bootstrap.min.js"></script>
         <?php $this->get_js() ?>
