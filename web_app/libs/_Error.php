@@ -17,8 +17,8 @@ class _Error extends Controller {
             $this->error_number = $number;
             $this->_file = $file;
 
-            $this->title = "Error";
-            $this->View(ERROR_View, ERROR_Layout);
+            $data['title'] = 'Error 404';
+            $this->View(ERROR_View, ERROR_Layout ,$data);
             exit();
         }
     }
