@@ -7,8 +7,7 @@ class Home extends Controller {
         // $user->name = 'Name Model !!!';
 
         $data['title'] = 'Index';
-        $this->set_js(array('/web_app/public/js/home/app.js',
-                            '/web_app/public/js/home/jquery_scrolls.js'));
+        $this->set_js(array('/web_app/public/js/home/app.js'));
         $this->View('home/Index.html','_shared/Layout.php',$data);
     }
 

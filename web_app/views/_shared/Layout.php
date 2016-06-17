@@ -13,6 +13,7 @@
         <link rel="stylesheet" type="text/css" href="/web_app/public/css/site.css" />
         <?php $this->get_css() ?>
 
+        <script type="text/javascript" src="/web_app/public/lib/jquery/dist/jquery.min.js"></script>
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -95,7 +96,6 @@
             </div>
         </footer>
 
-        <script type="text/javascript" src="/web_app/public/lib/jquery/dist/jquery.min.js"></script>
         <script type="text/javascript" src="/web_app/public/lib/angular/angular.min.js"></script>
         <script type="text/javascript" src="/web_app/public/lib/bootstrap/dist/js/bootstrap.min.js"></script>
         <?php $this->get_js() ?>
