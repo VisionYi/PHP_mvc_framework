@@ -43,20 +43,7 @@
                         </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="">註冊</a></li>
-                        <li><a href="">登入</a></li>
-                        <li class="ss-ver-divider"></li>
-                        <li class="dropdown">
-                            <a href="" class="dropdown-toggle" data-toggle="dropdown">我的暱稱 <span class="caret"></span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="">個人資料</a></li>
-                                <li><a href="">我的圖片.作品</a></li>
-                                <li><a href="">連結網址</a></li>
-                                <li class="divider"></li>
-                                <li><a href="">個人訊息</a></li>
-                            </ul>
-                        </li>
+                        <?php require 'LoginPartial.php'; ?>
                     </ul>
                 </div>
             </div>
