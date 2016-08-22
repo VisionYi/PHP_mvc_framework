@@ -2,7 +2,7 @@
 
 PHP自製開發框架
 
-IED : sublime text 3
+IDE : sublime text 3
 
 內容與功能:
 
